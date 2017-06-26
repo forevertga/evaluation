@@ -1,0 +1,121 @@
+.article {
+  &__textarea,
+  .redactor-editor {
+    min-height: 400px !important;
+  }
+
+  &__aside-column {
+    padding-top: 26px; // to account for the article title label
+
+    .box {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .article__status-group {
+      height: @input-height-small;
+      .form-group {
+        margin-bottom: 0;
+      }
+      > * {
+        display: inline-block;
+        margin-right: 5px;
+        line-height: 30px;
+        vertical-align: middle;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      .form-control {
+        width: auto;
+        min-width: 110px;
+      }
+    }
+  }
+
+  &__featured-media-dropzone {
+    width: 100%;
+    min-height: 200px;
+    text-align: center;
+    border: 2px dashed #ccc;
+    border-radius: 4px;
+
+    .dz-message {
+      margin-top: 70px;
+      padding: 10px;
+      color: #666;
+      font-size: 16px;
+    }
+
+    .dz-preview {
+      width: auto;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__notes-title {
+    font-size: @font-size-h3;
+    margin: 0 0 10px;
+  }
+
+  &__notes-wrap,
+  &__new-note-wrap {
+    margin: 20px 0;
+    max-width: 600px;
+  }
+
+  &__note {
+  }
+
+  &__autosave {
+    margin: -16px 0 @line-height-computed;
+    padding: @padding-base-vertical @padding-base-horizontal;
+    color: @text-muted;
+    text-align: right;
+    background: #fff;
+    border-top: 1px solid #f4f4f4;
+  }
+
+  &__note-content {
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+
+  &__note-textarea {
+    max-width: 100%;
+    min-height: 200px;
+  }
+
+  &__new-note-wrap {
+    margin-top: 30px;
+  }
+
+  &__new-note-btn {
+    display: block;
+    width: 200px;
+    margin: 50px auto;
+    padding: 15px 20px;
+    background: #fff;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #dfdfdf;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+
+    &:hover,
+    &:focus {
+      background: #fafafa;
+    }
+  }
+
+  &__note-editable {
+    min-height: 50px;
+    margin: 0;
+    outline: 0;
+  }
+}

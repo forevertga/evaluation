@@ -1,0 +1,79 @@
+/*
+ * Page: Card
+ * ----------------------
+ */
+
+.card-page {
+  //background: #efeff2;
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.card-logo {
+  outline: 0;
+  border: 0;
+
+  img {
+    width: 240px;
+    height: auto;
+    border: 0;
+  }
+}
+
+.card-logo-caption {
+  margin-top: 18px;
+  margin-bottom: 18px;
+  color: #606060;
+  font-size: 21px;
+  line-height: 1.1;
+}
+
+.card-box {
+  width: 360px;
+  margin: 7% auto;
+  @media (max-width: @screen-sm) {
+    width: 90%;
+    margin-top: 20px;
+  }
+}
+
+.card-box-body {
+  padding: 20px 20px 25px;
+  color: #666;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+
+  .form-control-feedback {
+    color: #777;
+  }
+}
+
+.card-box-title {
+  //.h3;
+  margin-top: 0;
+  color: #333;
+  text-align: center;
+}
+
+.card-box-msg {
+  margin: 0;
+  padding: 0 10px 20px;
+  text-align: center;
+}
+
+.card-box-footer {
+  margin: 12px auto;
+  text-align: center;
+
+  &:empty {
+    display: none;
+  }
+}
+
+.social-auth-links {
+  margin: 10px 0;
+}
